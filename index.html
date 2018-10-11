@@ -27,7 +27,7 @@
                 <p>This document is intended for those who seek to develop and publish open source code repositories at Indiana University. All questions about this document may be directed to <a href="mailto:opensource@iu.edu">opensource@iu.edu</a>.</p>
             </div>
 
-            <h1 class="rvt-ts-26 rvt-m-top-lg">Conditions and Guidelines</h1>
+            <h1 class="rvt-ts-32 rvt-m-top-lg">Guidelines and Procedures</h1>
 
             <p>Indiana University encourages and supports the establishment and publishing of open source code repositories under the following conditions and guidelines:</p>
 
@@ -90,7 +90,7 @@ POSSIBILITY OF SUCH DAMAGE.
                 <li>Each unit or team will manage its interaction with any communities that are established as a result of its open source products as it sees fit. This includes notifications about releases, security fixes, and other types of communication.</li>
             </ul>
 
-            <h1 class="rvt-ts-26 rvt-m-top-lg">Procedures for Publishing Open Source</h1>
+            <h2 class="rvt-ts-26 rvt-m-top-lg">Procedures for Publishing Open Source</h2>
 
             <ul>
                 <li>Obtain approval from the appropriate level within your unit to publish the target intellectual property as open source.</li>
@@ -116,7 +116,7 @@ POSSIBILITY OF SUCH DAMAGE.
             </ul>
 
             
-            <h1 class="rvt-ts-26 rvt-m-top-lg">Archiving an Open Source Repository</h1>
+            <h2 class="rvt-ts-26 rvt-m-top-lg">Archiving an Open Source Repository</h2>
 
             <p>It is expected that some projects which are published as open source will eventually become abandoned or no longer relevant. In these cases, it is in the best interest of Indiana University to remove 
                 these from the public GitHub. Requests for archival should go through <a href="mailto:opensource@iu.edu">opensource@iu.edu</a> and can proceed in one of two ways:</p>
@@ -127,7 +127,7 @@ POSSIBILITY OF SUCH DAMAGE.
             </ol>
 
             
-            <h1 class="rvt-ts-26 rvt-m-top-lg">Responding to Security or Data Breach</h1>
+            <h2 class="rvt-ts-26 rvt-m-top-lg">Responding to Security or Data Breach</h2>
             
             <p>While it is the responsibility of everyone participating in an open source project to ensure no secretes or non-public information makes its way into a repository by accident, accidents do happen. 
                 If you suspect or know of the existence of sensitive data in a public open source repository, notify notify <a href="mailto:it-incident@iu.edu">it-incident@iu.edu</a> and 
@@ -137,6 +137,63 @@ POSSIBILITY OF SUCH DAMAGE.
             <p>Remember, simply deleting an offending file from a git repository will not delete its history!</p>
 
             <p>Please follow these same procedures if you suspect that someone has gained unauthorized commit access to your repository.</p>
+
+
+
+            <h1 class="rvt-ts-32 rvt-m-top-lg">Administration</h1>
+
+            <p>Proper administration of organizations in GitHub.com that contain open source repositories is critical to ensuring security of the code contained therein and controlling the university’s risk. 
+            This document is intended for the IU Open Source Administrators who are responsible for maintaining the <a href="https://github.com/indiana-university">indiana-university</a> organization as well 
+            as those who have a need to administer their own GitHub.com organization that contains open source repositories.<p>
+
+            <h2 class="rvt-ts-26 rvt-m-top-lg">Organization Administration Guidelines</h2>
+
+            <p>The administrators of a GitHub.com organization used for publishing open source repositories are responsible for the following:</p>
+
+            <ul>
+                <li>When creating an organization, the “This account is owned by a business” option must be selected and “Indiana University” must be entered into the text box.</li>
+                <li>The <a href="https://help.github.com/articles/requiring-two-factor-authentication-in-your-organization/">“Require two-factor authentication for everyone”</a> option must be enabled for the organization.</li>
+                <li>Only IU employees should be included as members of the organization, and only those that need to be on teams that have write/admin access to the repositories within.</li>
+                <li>Anyone added as a member to the organization must first be provided a copy of the “Guidelines and Procedures” document for the Indiana University Open Source Program and instructed to adhere to 
+                    those in the publishing of their open source project.</li>
+                <li>Accounts representing a “system” or “bot” may be added as a member of the organization for the purpose of integration with continuous integration and other tools. Access to these accounts should be managed 
+                    appropriately by the administrators.</li>
+                <li>Ensure that approval has been obtained for the creation of the open source repository and maintain a record of that approval.</li>
+                <li>Membership in the organization must be updated over time and as soon as possible after people leave the university or teams within the organization.</li>
+                <li>There must be a mechanism in place to allow for repositories to easily and quickly be made private in the case of a suspected or actual sensitive data disclosure. This will mean either paying for the 
+                    GitHub organization where the repository is hosted or having the ability to transfer it to another paid organization where it can be made private.</li>
+            </ul>
+
+            <h2 class="rvt-ts-26 rvt-m-top-lg">IU Open Source Administrators</h2>
+
+            <p>A small cross-UITS group will be established with the following responsibilities:</p>
+
+            <ul>
+                <li>Administration of the “indiana-university” GitHub.com organization pursuant to the “Organization Administration Guidelines” previously established.</li>
+                <li>Administration of a separate paid organization that can be used for transferring repositories for purposes of making them private in case of a sensitive data disclosure. 
+                    This will have the fewest members possible in order to reduce cost (GitHub bills per organization member).</li>
+                <li>Review and approval of requests for new open source repositories within the Indiana-university organization</li>
+                <li>Review and approval of requests for new organizations that wish to host open source repositories. </li>
+                <li>Creation and monitoring of a shared request queue that can be reached at <a href="mailto:opensource@iu.edu">opensource@iu.edu</a>. This should be tied to Jira or Footprints for recordkeeping.</li>
+                <li>Each member will be well-versed in the conditions and guidelines around approval and creation of open source repositories and may act unilaterally when a request is received, provided that appropriate approval is supplied.</li>
+                <li>Will engage with the <a href="https://research.iu.edu/innovation-commercialization/index.html">Innovation and Commercialization Office</a> when questions or requests about open source licensing come 
+                    up which are not covered by the existing guidelines.</li>
+                <li>Will do their best to serve as open source advocates and experts within the university community.</li>
+            </ul>
+
+            <p>The <a href="https://github.com/indiana-university">indiana-university</a> organization in GitHub will be configured as follows:</p>
+
+            <ul>
+                <li>All of the IU Open Source Administrators will have the “Owner” role</li>
+                <li>Repository Creation – disabled</li>
+                <li>Repository Deletion – disabled</li>
+                <li>Repository Visibility Change – disabled</li>
+                <li>Default Repository Permissions – none</li>
+                <li>Two-Factor Authentication – required</li>
+                <li>Verified Domains – verify iu.edu</li>
+                <li>Projects (organization and repository) – enabled</li>
+                <li>Team Discussions - enabled</li>
+            </ul>
 
 
         </div>
