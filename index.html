@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link media="all" rel="stylesheet" href="./css/rivet.min.css">
+    <title>Rivet starter file</title>
+</head>
+<body>
+    <header class="rvt-header" role="banner">
+        <a class="rvt-skip-link" href="#main-content">Skip to content</a>
+        <div class="rvt-header__trident">
+            <svg role="img" xmlns="http://www.w3.org/2000/svg" width="60" height="70" viewBox="0 0 60 70" aria-labelledby="iu-logo">
+                <title id="iu-logo">Indiana University</title>
+                <rect width="60" height="70" fill="#900" />
+                <polygon points="35.96 18.44 35.96 21.84 38.52 21.84 38.52 40.51 33.41 40.51 33.41 15.9 35.96 15.9 35.96 12.5 24.04 12.5 24.04 15.9 26.58 15.9 26.58 40.51 21.48 40.51 21.48 21.84 24.04 21.84 24.04 18.44 12.09 18.44 12.09 21.84 14.65 21.84 14.65 43.79 18.72 48.15 26.58 48.15 26.58 53.26 24.04 53.26 24.04 57.5 35.96 57.5 35.96 53.26 33.41 53.26 33.41 48.15 40.93 48.15 45.33 43.79 45.33 21.84 47.91 21.84 47.91 18.44 35.96 18.44" fill="#fff" />
+            </svg>
+        </div>
+        <span class="rvt-header__title">
+            <a href="#0">Open Source Guidelines</a>
+        </span>
+    </header>
+    <main role="main" id="main-content">
+        <div class="rvt-container rvt-container--sophomore">
+            <div class="rvt-panel rvt-m-top-lg">
+                <p>This document is intended for those who seek to develop and publish open source code repositories at Indiana University. All questions about this document may be directed to <a href="mailto:opensource@iu.edu">opensource@iu.edu</a>.</p>
+            </div>
+
+            <h1 class="rvt-ts-26 rvt-m-top-lg">Conditions and Guidelines</h1>
+
+            <p>Indiana University encourages and supports the establishment and publishing of open source code repositories under the following conditions and guidelines:</p>
+
+            <ul>
+                <li>Everyone who is involved in the creation, management, maintenance, or approval of an IU open source repository must read and understand these conditions and guidelines.</li>
+                <li>Before deciding to create an open source repository, consider the repository’s open source value. Does it have utility outside of Indiana University? Does it represent 
+                    something novel or innovative? In releasing code as open source, IU is sharing its intellectual property with the world and this work should ideally represent the best of what we have to offer.</li>
+                <li>Creating an open source repository is a business decision made by the responsible unit. All requests to create an open source repository must be approved in advance by an appropriately authorized 
+                    individual of at least director level or above within the associated unit. Each unit may have their own process for how this approval is obtained or who will have authority to provide that approval. 
+                    The unit may also contact the <a href="https://research.iu.edu/innovation-commercialization/contact-ico.html">Innovation and Commercialization Office</a> (ICO) with any commercialization questions 
+                    regarding the contemplated open source repository.</li>
+                <li>Open source repositories should be hosted on <a href="https://github.com">GitHub.com</a> . Two-factor authentication will be required for all interactions with GitHub.</li>
+                <li>All repositories must be licensed <a href="https://opensource.org/licenses/BSD-3-Clause">BSD 3-Clause</a>. If a different license is desired, please contact the IU Open Source Administrators at 
+                    <a href="mailto:opensource@iu.edu">opensource@iu.edu</a> to discuss.</li>
+                <li>All repositories must have an appropriate LICENSE file containing the BSD 3 copyright notice and license text in the root of the repository.</li>
+                <li>Wherever practicable, all source files within the repository should include a comment block appropriate for the file type at or near the top of the file which contains the BSD 3 copyright notice and license text.</li>
+                <li>The copyright notice and license text should be written as follows:</li>
+            </ul>
+
+            <div class="rvt-panel rvt-m-top-sm">
+                <pre>
+Copyright  © [year of first publication] The Trustees of Indiana University
+
+Licensed under the BSD 3-Clause License.
+
+Redistribution and use in source and binary forms, with or without modification, 
+are permitted provided that the following conditions are met:
+                
+    1. Redistributions of source code must retain the above copyright notice, 
+       this list of conditions and the following disclaimer.
+    2. Redistributions in binary form must reproduce the above copyright notice, 
+       this list of conditions and the following disclaimer in the documentation 
+       and/or other materials provided with the distribution.
+    3. Neither the name of the copyright holder nor the names of its contributors 
+       may be used to endorse or promote products derived from this software 
+       without specific prior written permission.
+                
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED 
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. 
+IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, 
+INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT 
+NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR 
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, 
+WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) 
+ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
+POSSIBILITY OF SUCH DAMAGE.
+                </pre>
+            </div>
+
+            <ul class="rvt-m-top-lg">
+                <li>No non-public IU data may be stored in a repository. Please ensure you are familiar with the <a href="https://datamanagement.iu.edu/types-of-data/classifications.php">institutional data classifications</a>.</li>
+                <li>Take <strong>extra care</strong> to ensure no secrets (passwords, keys, etc.) are stored within a repository!</li>
+                <li>If secrets or non-public information makes its way into a repository, notify <a href="mailto:it-incident@iu.edu">it-incident@iu.edu</a> and <a href="mailto:opensource@iu.edu">opensource@iu.edu</a> <strong>immediately and 
+                    without delay</strong> so that appropriate action may be taken. Remember, simply deleting an offending file from a git repository will not delete its history! It can still be retrieved.</li>
+                <li>Only IU employees should have write and/or admin access to the repository.</li>
+                <li>Contributions from external collaborators may be accepted via Pull Request pursuant to the <a href="https://help.github.com/articles/github-terms-of-service/#6-contributions-under-repository-license">GitHub Terms of Service</a>, 
+                    so long as the repository contains proper notice of license by having a LICENSE file in the root of the repository, as noted previously.</li>
+                <li>Remember that you are representing Indiana University to the outside world by participating in a published open source project. Ensure that any discussion on issues or pull requests are civil.</li>
+                <li>Each unit or team will manage its interaction with any communities that are established as a result of its open source products as it sees fit. This includes notifications about releases, security fixes, and other types of communication.</li>
+            </ul>
+
+            <h1 class="rvt-ts-26 rvt-m-top-lg">Procedures for Publishing Open Source</h1>
+
+            <ul>
+                <li>Obtain approval from the appropriate level within your unit to publish the target intellectual property as open source.</li>
+                <li>Have all IU employees who should have admin and/or write access to the GitHub repository read the above Conditions and Guidelines and then create accounts on github.com, or identify their existing accounts.</li>
+                <li>By default, all approved open source repositories will be created within the official <a href="https://github.com/indiana-university">indiana-university</a> organization on GitHub.com which is maintained by the IU Open Source Administrators.</li>
+                <li>Units may alternatively create and manage their own organizations in GitHub.com provided they have obtained director level or higher approval to do so. If a different organization is needed, contact the administrators at 
+                    <a href="mailto:opensource@iu.edu">opensource@iu.edu</a>, including the approval for the creation of the organization. There are additional guidelines that will be provided and which must be followed for the proper 
+                    creation and administration of one of these organizations.</li>
+                <li>Email <a href="mailto:opensource@iu.edu">opensource@iu.edu</a> with the following information:</li>
+                    <ul>
+                        <li>Requested repository name</li>
+                        <li>Description of the open source project</li>
+                        <li>Approval details from authorized individual within the unit</li>
+                        <li>Name of GitHub team to create (including list of GitHub accounts to include as members) or name of existing team within the organization to grant “Admin” permission to the new repository</li>
+                    </ul>
+                <li>The administrators will review your request and, if approved, will do the following:
+                    <ul>
+                        <li>Add any GitHub accounts to the organization who aren’t already members.</li>
+                        <li>Send a copy of the Conditions and Guidelines to each new person added to the organization.</li>
+                        <li>Create your repository and team (if applicable) within the target organization</li>
+                        <li>Grant your team “Admin” permissions to the repository</li>
+                    </ul>
+            </ul>
+
+            
+            <h1 class="rvt-ts-26 rvt-m-top-lg">Archiving an Open Source Repository</h1>
+
+            <p>It is expected that some projects which are published as open source will eventually become abandoned or no longer relevant. In these cases, it is in the best interest of Indiana University to remove 
+                these from the public GitHub. Requests for archival should go through <a href="mailto:opensource@iu.edu">opensource@iu.edu</a> and can proceed in one of two ways:</p>
+
+            <ol>
+                <li>Request that the repository be <a href="https://help.github.com/articles/about-archiving-repositories/">archived</a> in GitHub.</li>
+                <li>Request that the repository be <a href="https://help.github.com/articles/deleting-a-repository/">deleted</a> in GitHub. This is destructive and cannot be undone!</li>
+            </ol>
+
+            
+            <h1 class="rvt-ts-26 rvt-m-top-lg">Responding to Security or Data Breach</h1>
+            
+            <p>While it is the responsibility of everyone participating in an open source project to ensure no secretes or non-public information makes its way into a repository by accident, accidents do happen. 
+                If you suspect or know of the existence of sensitive data in a public open source repository, notify notify <a href="mailto:it-incident@iu.edu">it-incident@iu.edu</a> and 
+                <a href="mailto:opensource@iu.edu">opensource@iu.edu</a> <strong>immediately and  without delay</strong> so that appropriate action may be taken. The open source administrators will immediately 
+                transfer your repository to a private repository so that it can be quarantined for further analysis without risking additional exposure. They will then contact you for further details on how to proceed.</p>
+
+            <p>Remember, simply deleting an offending file from a git repository will not delete its history!</p>
+
+            <p>Please follow these same procedures if you suspect that someone has gained unauthorized commit access to your repository.</p>
+
+
+        </div>
+
+
+        <!-- **************************************************************
+            Start building here!
+        *************************************************************** -->
+
+    </main>
+    <footer class="rvt-footer m-top-xxl" role="contentinfo">
+        <div class="rvt-footer__copyright-lockup">
+            <div class=rvt-footer__trident>
+                <svg role="img" xmlns="http://www.w3.org/2000/svg" width="20" height="25" viewBox="0 0 20 25">
+                    <polygon points="13.33 3.32 13.33 5.21 14.76 5.21 14.76 15.64 11.9 15.64 11.9 1.9 13.33 1.9 13.33 0 6.67 0 6.67 1.9 8.09 1.9 8.09 15.64 5.24 15.64 5.24 5.21 6.67 5.21 6.67 3.32 0 3.32 0 5.21 1.43 5.21 1.43 17.47 3.7 19.91 8.09 19.91 8.09 22.76 6.67 22.76 6.67 25.13 13.33 25.13 13.33 22.76 11.9 22.76 11.9 19.91 16.1 19.91 18.56 17.47 18.56 5.21 20 5.21 20 3.32 13.33 3.32" fill="#900"/>
+                </svg>
+            </div>
+            <p><a href="https://www.iu.edu/copyright/index.html">Copyright</a> &copy; 2017 The Trustees of <a href="https://www.iu.edu/">Indiana University</a></p>
+        </div>
+        <ul class="rvt-footer__aux-links">
+            <li class="rvt-footer__aux-item">
+                <!-- You can learn more about privacy policies and generate one
+                     for your site here:
+                     https://protect.iu.edu/online-safety/tools/privacy-notice/index.html -->
+                <a href="#0">Privacy Policy</a>
+            </li>
+            <li class="rvt-footer__aux-item">
+                <a href="https://accessibility.iu.edu/">Accessibility help</a>
+            </li>
+        </ul>
+    </footer>
+    <script src="./js/rivet.min.js"></script>
+</body>
+</html>
