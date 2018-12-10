@@ -1,3 +1,7 @@
+<!--
+    Copyright (C) 2018 The Trustees of Indiana University
+    SPDX-License-Identifier: BSD-3-Clause
+-->
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
@@ -43,42 +47,24 @@
                 <li>All repositories must be licensed <a href="https://opensource.org/licenses/BSD-3-Clause">BSD 3-Clause</a>. If a different license is desired, please contact the IU Open Source Administrators at 
                     <a href="mailto:opensource@iu.edu">opensource@iu.edu</a> to discuss.</li>
                 <li>All repositories must have an appropriate LICENSE file containing the BSD 3 copyright notice and license text in the root of the repository.</li>
-                <li>Wherever practicable, all source files within the repository should include a comment block appropriate for the file type at or near the top of the file which contains the BSD 3 copyright notice and license text.</li>
-                <li>The copyright notice and license text should be written as follows:</li>
-            </ul>
-
-            <div class="rvt-panel rvt-m-top-sm">
-                <pre>
-Copyright  © [year of first publication] The Trustees of Indiana University
-
-Licensed under the BSD 3-Clause License.
-
-Redistribution and use in source and binary forms, with or without modification, 
-are permitted provided that the following conditions are met:
-                
-    1. Redistributions of source code must retain the above copyright notice, 
-       this list of conditions and the following disclaimer.
-    2. Redistributions in binary form must reproduce the above copyright notice, 
-       this list of conditions and the following disclaimer in the documentation 
-       and/or other materials provided with the distribution.
-    3. Neither the name of the copyright holder nor the names of its contributors 
-       may be used to endorse or promote products derived from this software 
-       without specific prior written permission.
-                
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
-ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED 
-WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. 
-IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, 
-INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT 
-NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR 
-PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, 
-WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) 
-ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
-POSSIBILITY OF SUCH DAMAGE.
-                </pre>
-            </div>
-
-            <ul class="rvt-m-top-lg">
+                <li>Wherever practicable, all source files within the repository should include a comment block appropriate for the file type at or near the top of the file which contains a copyright notice and reference to the license.
+                    <ul>
+                        <li>The copyright notice should be written as follows:
+                            <div class="rvt-panel rvt-m-top-sm">
+                                <pre>Copyright (C) [year of first publication] The Trustees of Indiana University</pre>
+                            </div>
+                        </li>
+                        <li>For the reference to the license, you can either include the <a href="https://opensource.org/licenses/BSD-3-Clause">full BSD 3 license text</a> or the BSD 3 <a href="https://spdx.org/">SPDX</a> License Identifier</li>
+                        <li>For example, in a source code file that uses C-style block comments, you might include the following at the top of the file:
+                            <div class="rvt-panel rvt-m-top-sm">
+                <pre>/**
+ * Copyright (C) [year of first publication] The Trustees of Indiana University
+ * SPDX-License-Identifier: BSD-3-Clause
+ */</pre>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
                 <li>No non-public IU data may be stored in a repository. Please ensure you are familiar with the <a href="https://datamanagement.iu.edu/types-of-data/classifications.php">institutional data classifications</a>.</li>
                 <li>Take <strong>extra care</strong> to ensure no secrets (passwords, keys, etc.) are stored within a repository!</li>
                 <li>If secrets or non-public information makes its way into a repository, notify <a href="mailto:it-incident@iu.edu">it-incident@iu.edu</a> and <a href="mailto:opensource@iu.edu">opensource@iu.edu</a> <strong>immediately and 
